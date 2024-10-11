@@ -20,6 +20,28 @@ WHERE
     job_location = 'Anywhere' AND
     salary_year_avg IS NOT NULL
 ORDER BY job_title_short,salary_year_avg DESC
+LIMIT 20
+
+
+
+SELECT 
+    job_postings_fact.job_id,
+    
+    job_title,
+    job_title_short,
+    job_location,
+    salary_year_avg,
+    skills_job_dim.skill_id
+FROM
+    job_postings_fact
+LEFT JOIN skills_job_dim
+ON job_postings_fact.job_id = skills_job_dim.job_id
+WHERE
+    job_title_short = 'Business Analyst' AND
+    job_location = 'Anywhere' AND
+    salary_year_avg IS NOT NULL
+ORDER BY 
+    salary_year_avg DESC
 LIMIT 10
 
   
