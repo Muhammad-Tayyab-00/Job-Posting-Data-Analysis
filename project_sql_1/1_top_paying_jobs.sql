@@ -1,8 +1,8 @@
 /*
 Question: What are the top paying Business Analyst and Data Analyst jobs?
 - Identify the 10 highest-paying Data Analyst and Business Analyst
-- Focuses on job postinhs with specified salaries (removes null)
-- Why? Highlights the top-payingn oppertunities for Data Analyst and Business Analyst  
+- Focuses on job postings with specified salaries (removes null)
+- Why? Highlights the top-paying opportunities for Data Analyst and Business Analyst  
 */
 
 (
